@@ -44,10 +44,10 @@ body {
 
 .slideshow {
 	background-image: url('/imgs/building.jpg');
-	width: 63.58333333%;
-	margin:20px 0 0 4%;
+	width: 100%;
 	height:324px;
 	position: relative;
+	padding: 0;
 }
 
 .search-form-holder {
@@ -79,4 +79,27 @@ body {
 	padding:0;
 	margin: 0 0 10px 0;
 	font-size: 16px;
+}
+
+.link-container {
+	width: 28.41666667%;
+	float:left;
+	margin-top:20px;
+}
+
+.properties {
+
+}
+
+.properties .col-head {
+	background-image: url('/imgs/properties.jpg');
+}
+
+.properties .col-links {
+	background-image: url('/imgs/properties-bg.jpg')
+}
+.slideshow-container {
+	width:63.58333333%;
+	float:left;
+	margin:20px 4% 0 4%;
 }
