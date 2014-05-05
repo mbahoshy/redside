@@ -20,6 +20,10 @@ var listingSchema = new mongoose.Schema({
 	price: Number,
 	size: String,
 	imgs: [],
+	coord: {
+		lat: Number,
+		log: Number,
+	}
 
 });
 
