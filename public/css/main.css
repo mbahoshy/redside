@@ -32,7 +32,8 @@ body {
 
 #page {
 	float:left;
-	width: 100%;
+	width: 92%;
+	margin:0 4%;
 }
 
 .relative {
@@ -44,7 +45,7 @@ body {
 }
 
 .slideshow {
-	background-image: url('/imgs/building.jpg');
+	background-image: url('/imgs/building-lrg.png');
 	width: 100%;
 	height:324px;
 	position: relative;
@@ -52,10 +53,24 @@ body {
 }
 
 .slideshow-container {
+	width:100%;
+	float:left;
+	margin:20px 0 0 0;
+}
+
+/*.slideshow-container {
 	width:69.36363636%;
 	float:left;
 	margin:20px 2% 0 4%;
 }
+*/
+
+.content-container {
+	width:69.36363636%;
+	float:left;
+	margin:20px 0 0 0;
+}
+
 
 .search-form-holder {
 	position: absolute;
@@ -91,9 +106,11 @@ body {
 
 .link-container {
 	width: 22.63636364%;
-	float:left;
-	margin:20px 2% 0 0;
+	float:right;
+	margin:20px 0 0 0;
 }
+
+
 
 .link-box {
 	width: 100%;
