@@ -1,0 +1,53 @@
+@media screen and (max-width: 540px) {
+
+	.slideshow-container {
+		width:100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.slideshow {
+		margin-bottom: 200px;
+	}
+
+	.search-form-holder {
+		top:324px;
+		left:0;
+		width:96%;
+		height:160px;
+		background-color: rgba(137, 29, 42, .9);
+		padding:20px 2%;
+		border-radius: 0;
+
+	}
+
+	.search-form-holder select {
+		width:75%;
+		margin:5px 12.5%;
+		padding:10px;
+
+	}
+
+	.search-form-holder h3 {
+		text-align: center;
+	}
+
+	.content-container p {
+		display: none;
+	}
+
+	.content-container p:first-child {
+		text-align: justify;
+		display: block;
+	}
+
+	.link-container {
+		width:100%;
+		margin-right: 0;
+		margin-left: 0;
+		border:none;
+		box-shadow: none;
+		background-color: #EEEEEE;
+		border-radius: 0;
+	}
+}

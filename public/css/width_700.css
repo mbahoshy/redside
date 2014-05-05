@@ -1,0 +1,27 @@
+@media screen and (max-width: 700px) {
+
+	.content-container p {
+		width:92%;
+		margin-right:4%;
+		margin-left:4%;
+		text-align: left;
+	}
+
+	.content-container p:first-child {
+
+		font-style: italic;
+		text-align: center;
+		width:92%;
+		margin-right: 4%;
+		margin-left: 4%;
+	}
+
+	.link-container {
+		width:92%;
+		margin-right: 4%;
+		margin-left: 4%;
+		border-radius: 8px;
+	}
+
+
+}
