@@ -9,5 +9,7 @@ module.exports = function (app) {
 		res.end();
 
 	});
+
+	app.get("/mapListings/:neighborhood/:size/:price", mod.returnMapListings);
 }
 

@@ -12,15 +12,7 @@
 	width:94%;
 	float:left;
 	margin:20px 2% 0 4%;
-	/*margin:20px 0 0 0;*/
 }
-
-/*.slideshow-container {
-	width:69.36363636%;
-	float:left;
-	margin:20px 2% 0 4%;
-}
-*/
 
 
 .search-form-holder {
@@ -46,10 +38,8 @@
 
 .search-form-holder h3 {
 	color:white;
-	/*float:right;*/
 	width:100%;
 	text-align: right;
-	/*font-style: italic;*/
 	padding:0;
 	margin: 0 0 10px 0;
 	font-size: 16px;
@@ -110,7 +100,10 @@
 	color:rgb(71, 71, 255);
 }
 
-
+.submit-button {
+	padding:5px 10px;
+	background-color: white;
+}
 
 
 

@@ -2,7 +2,7 @@
 	<div class='slideshow'>
 		<div class='search-form-holder'>
 			<h3>Find Your Seattle Apartment</h3>
-			<form>
+			<form id='search_form'>
 				<select name='neighborhood'>
 					<option value='Ballard'>Ballard</option>
 					<option value='Fremont'>Fremont</option>
@@ -23,6 +23,9 @@
 					<option value='u1999'>$1,500 - $1,999</option>
 					<option value='o2000'>$2,000 and up</option>
 				</select>
+				<div ng-click='submitForm()' class='submit-button'>
+					Submit
+				</div>
 			</form>
 		</div>
 	</div>

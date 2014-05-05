@@ -16,7 +16,7 @@ app.configure(function(){
   app.use(express.bodyParser());
 });
 
-// require('./node/mongoose-config');
+require('./node/mongoose-config');
 
 
 // require('./config/passport')(passport); // config passport, pass in passport as parameter
