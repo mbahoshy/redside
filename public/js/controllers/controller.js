@@ -66,15 +66,16 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 
 			var container = $('.map-sidebar');
 			var sl = $('.shortlisting-container');
+			var tab = $('.map-sidebar-button');
 			var width = container.css('width');
 			console.log(width);
 			if (close == true) {
 				// container.animate({width:'0'}, 250);
 			}
 			// container.animate({width:'25%'}, 250);
+			tab.animate({left:"25%"}, 250);
 			sl.animate({left:'0'}, 250, function () {
-			$('.shortlisting-container p').animate({opacity:'1'}, 250);
-				
+				$('.shortlisting-container p').animate({opacity:'1'}, 250);
 			});
 			console.log(width);
 		}
