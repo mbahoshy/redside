@@ -1,10 +1,21 @@
-<div data-ng-repeat="poop in data">
-	<p>Map View {{ poop.title }}</p>
-</div ng-repeat-end>
-<div id="map_canvas">
+<div class='map-container'>
+	<div id="map_canvas"></div>
+	<div class='map-sidebar'>	
+		<div class='shortlisting-container'>
+			<span>{{listing.title}}</span>
+			<p>
+				{{listing.address.street}}<br />
+				{{listing.address.neighborhood}}<br />
+			</p>
+			<p>{{listing.description}}</p>
+			<p>{{listing.address.price}}</p>
 
-</div>
-<div class='shortlisting-container'>
-	{{listing.title}}
-	{{listing.description}}
+
+		</div>
+		<div ng-click="toggleShortlistingContainer(true)" class='map-sidebar-button'>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 </div>
