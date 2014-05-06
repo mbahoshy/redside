@@ -2,18 +2,31 @@
 	<div id="map_canvas"></div>
 	<div class='map-sidebar'>	
 		<div class='shortlisting-container'>
-			<span>{{listing.title}}</span>
-			<p>
-				{{listing.address.street}}<br />
-				{{listing.address.neighborhood}}<br />
-			</p>
-			<p>{{listing.description}}</p>
-			<p>{{listing.address.price}}</p>
+			<div class='tabs'>
+				<span ng-click = "toggleTabs(0)" class='listing-tab active-tab'>Listings</span>
+				<span ng-click = "toggleTabs(1)" class='detail-tab'>Details</span>
+			</div>
 
+			<div id='listing_tab'>
+				<p>tester</p>
+				<div ng-repeat="listing in listings">
+					{{listing.title}}
+				</div>
+			</div>
+
+			<div id='detail_tab'>
+				<span>{{listing.title}}</span>
+				<p>
+					{{listing.address.street}}<br />
+					{{listing.address.neighborhood}}<br />
+				</p>
+				<p>{{listing.description}}</p>
+				<p>{{listing.address.price}}</p>
+			</div>
 
 		</div>
 	</div>
-	<div ng-click="toggleShortlistingContainer(true)" class='map-sidebar-button'>
+	<div ng-click="toggleShortlistingContainer()" class='map-sidebar-button'>
 		<div>
 			<span></span>
 			<span></span>
