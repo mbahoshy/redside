@@ -15,32 +15,48 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			size = ($routeParams.size),
 			price = ($routeParams.price),
 			coord,
-			map;
+			map,
+			listings;
+
+			var infowindow = new google.maps.InfoWindow({
+			  content: "hello"
+			});
 
 		$http.get('/mapListings/' + neighborhood + '/' + size + '/' + price).success(function(data, status){
-			console.log(data);
-			console.dir(data);
-			coord = data[0].coord;
-			console.dir(coord);
-			$scope.data = data;
+
+			listings = data;
+			// $scope.data = data;
 		    var mapOptions = {
-	          center: new google.maps.LatLng(coord.lat, coord.log),
-	          zoom: 8
+	          center: new google.maps.LatLng(47.6323268, -122.3568641),
+	          zoom: 14
 	        };
 	        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-	        setMarkers(data);
-		
-
+	        setMarkers();
 		});
-		function setMarkers(data) {
-			for (var i = 0; i < data.length; i++) {
-				var myLatlng = new google.maps.LatLng(data[i].coord.lat, data[i].coord.log);
-				console.dir(data[i].coord.lat);
+		function setMarkers() {
+			for (var i = 0; i < listings.length; i++) {
+				var myLatlng = new google.maps.LatLng(listings[i].coord.lat, listings[i].coord.log);
 				var marker = new google.maps.Marker({
+					id: listings[i]._id,
 				    position: myLatlng,
 				    title:"Hello World!"
 				});
+				console.dir(listings[i]);
+				google.maps.event.addListener(marker, 'click', 	function () {
+					console.dir(marker.id);
+					for (var i = 0; i < listings.length; i ++) {
+						console.log(listings[i]._id);
+						if(listings[i]._id == marker.id) {
+							$scope.listing = listings[i];
+							$scope.$apply();
+
+						}
+					}
+				});
 			}
 			marker.setMap(map);
+
 		}
+		
+
 });
