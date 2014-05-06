@@ -36,25 +36,27 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 		function setMarkers() {
 			for (var i = 0; i < listings.length; i++) {
 				var myLatlng = new google.maps.LatLng(listings[i].coord.lat, listings[i].coord.log);
-				var marker = new google.maps.Marker({
+				var	marker = new google.maps.Marker({
 					id: listings[i]._id,
 				    position: myLatlng,
 				    title:"Hello World!"
 				});
 				console.dir(listings[i]);
 				google.maps.event.addListener(marker, 'click', 	function () {
-					console.dir(marker.id);
-					for (var i = 0; i < listings.length; i ++) {
-						console.log(listings[i]._id);
-						if(listings[i]._id == marker.id) {
-							$scope.listing = listings[i];
+					for (var y = 0; y < listings.length; y ++) {
+						console.log(listings[y]._id);
+						console.log(this.id);
+						if(listings[y]._id == this.id) {
+							$scope.listing = listings[y];
 							$scope.$apply();
 
 						}
 					}
+				
 				});
+
+				marker.setMap(map);
 			}
-			marker.setMap(map);
 
 		}
 		
