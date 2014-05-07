@@ -8,7 +8,6 @@
 			</div>
 
 			<div id='listing_tab'>
-				<p>tester</p>
 				<div ng-repeat="listing in listings" ng-click="listingClick($event)" ng-attr-data-listingid="{{listing._id}}">
 					{{listing.title}}<br />
 					{{listing.description}}
@@ -19,10 +18,13 @@
 				<span>{{listing.title}}</span>
 				<p>
 					{{listing.address.street}}<br />
-					{{listing.address.neighborhood}}<br />
+					{{listing.neighborhood}}<br />
 				</p>
 				<p>{{listing.description}}</p>
-				<p>{{listing.address.price}}</p>
+				<p><label>Bedrooms:</label> {{listing.bed}}</p>
+				<p><label>Bathrooms:</label> {{listing.bath}}</p>
+				<p>${{listing.price}}</p>
+				<img ng-src='/imgs/properties/{{listing.titleImg}}' />
 			</div>
 
 		</div>

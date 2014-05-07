@@ -17,7 +17,8 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			coord,
 			map,
 			toggleCounter = 0,
-			listings;
+			listings,
+			markersArray = [];
 
 
 			var infowindow = new google.maps.InfoWindow({
@@ -53,11 +54,10 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 				    position: myLatlng,
 				    title:"Hello World!"
 				});
-				console.dir(listings[i]);
+				markersArray.push(marker);
 				google.maps.event.addListener(marker, 'click', 	function () {
 					for (var y = 0; y < listings.length; y ++) {
-						console.log(listings[y]._id);
-						console.log(this.id);
+						markersArray[y].setIcon('https://www.google.com/mapfiles/marker.png')
 						if(listings[y]._id == this.id) {
 							$scope.listing = listings[y];
 							$scope.$apply();
@@ -67,6 +67,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 					$scope.toggleShortlistingContainer (true);
 					$scope.toggleTabs(1);
 					map.panTo(this.position);
+					this.setIcon('https://www.google.com/mapfiles/marker_green.png');
 				});
 
 				marker.setMap(map);
