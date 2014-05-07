@@ -9,8 +9,9 @@
 
 			<div id='listing_tab'>
 				<p>tester</p>
-				<div ng-repeat="listing in listings">
-					{{listing.title}}
+				<div ng-repeat="listing in listings" ng-click="listingClick($event)" ng-attr-data-listingid="{{listing._id}}">
+					{{listing.title}}<br />
+					{{listing.description}}
 				</div>
 			</div>
 

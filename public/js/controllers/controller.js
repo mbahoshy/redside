@@ -107,4 +107,20 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			}
 		}
 
+		$scope.listingClick = function (e) {
+			var listingid = $(e.target).data('listingid');
+			var latlng;
+
+			for (var y = 0; y < listings.length; y ++) {
+				if(listings[y]._id == listingid) {
+					latlng = new google.maps.LatLng(listings[y].coord.lat, listings[y].coord.log);
+					$scope.listing = listings[y];
+
+				}
+			}
+
+			map.panTo(latlng);
+			$scope.toggleTabs(1);
+		}
+
 });

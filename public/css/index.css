@@ -144,6 +144,10 @@
 	
 }
 
+#listing_tab div {
+	padding:20px 0;
+}
+
 #detail_tab span {
 	float:left;
 	width:75%;
