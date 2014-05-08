@@ -1,8 +1,9 @@
 redSide.controller("HomeController", function ($scope, $location, $http) {
-	
+
 	$http.get('/featured').success(function(data, status) {
 		console.dir(data);
 		$scope.listings = data;
+
 		// $scope.$apply();
 	});
 
@@ -16,6 +17,8 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 		$location.url('/seattle-properties/' + neighborhood + '/' + size + '/' + price);
 
 	}
+
+
 });
 
 redSide.controller("mapController", function ($scope, $routeParams, $http) {
