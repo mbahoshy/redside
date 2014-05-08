@@ -77,17 +77,23 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 		}
 		
 		$scope.toggleShortlistingContainer = function (mapPoint) {
+			var mapsidebar = $('.map-sidebar');
 			var sl = $('.shortlisting-container');
 			var tab = $('.map-sidebar-button');
+			var left = mapsidebar.css('width');
 			if (toggleCounter === 0) {
-				tab.animate({left:"25%"}, 250);
+				mapsidebar.css({display:'visible'});
+				tab.animate({left:left}, 250);
 				sl.animate({left:'0'}, 250);
 				toggleCounter = 1;		
 			}
 			else if (mapPoint != true) {
 				toggleCounter = 0;
-				tab.animate({left:"0"}, 250);				
-				sl.animate({left:"-102%"}, 250);
+				tab.animate({left:"0"}, 250);
+				sl.animate({left:"-102%"}, 250, function () {
+					mapsidebar.css({display:'none'});
+
+				});
 			} 
 
 		}
