@@ -19,7 +19,9 @@
 		border-radius: 10px;
 
 	}
-
+	.search-form-holder select {
+		width:24%;
+	}
 	.content-container {
 		width:100%;
 		margin: 30px 0 0 0;

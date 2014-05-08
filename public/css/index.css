@@ -23,7 +23,6 @@
 	background-color: rgba(137, 29, 42, .78);
 	padding:10px 3%;
 	border-radius: 10px;
-
 }
 
 .search-form-holder form {
@@ -31,9 +30,11 @@
 }
 
 .search-form-holder select {
-	padding:5px 10px;
+	padding:5px 2%;
 	border: 1px solid #CCCCCC;
-	width:30%;
+	width:26%;
+	margin: 0 1%;
+	float: left;
 }
 
 .search-form-holder h3 {
@@ -101,9 +102,24 @@
 }
 
 .submit-button {
-	padding:5px 10px;
-	background-color: white;
+	padding: 5px 20px;
+	background-color: rgb(0, 102, 231);
+	height: 20px;
+	float: right;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px #AAAAAA;
+	margin-right:1%;
 }
+
+/*.submit-button {
+	height:30px;
+	border-radius: 8%;
+	float:left;
+
+
+}*/
 
 .map-container {
 	position:relative;
@@ -128,7 +144,7 @@
 	left:0;
 	z-index: 2;
 	overflow-x:hidden;
-
+	display:none;
 }
 
 .shortlisting-container {
