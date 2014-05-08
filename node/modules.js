@@ -13,4 +13,14 @@ function returnMapListings (req, res) {
 	console.log(neighborhood);
 }
 
+function returnFeatured (req, res) {
+	listing.find({featured:true}, '', function(err, data) {
+		console.log(data);
+		res.json(data);
+
+	});
+
+}
+
 exports.returnMapListings = returnMapListings;
+exports.returnFeatured = returnFeatured;

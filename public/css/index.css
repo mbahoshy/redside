@@ -113,150 +113,43 @@
 	margin-right:1%;
 }
 
-
-/*.submit-button {
-	height:30px;
-	border-radius: 8%;
+.featured-container {
+	width:98%;
 	float:left;
-
-
-}*/
-
-.map-container {
-	position:relative;
-	width:100%;
-	height:85%;
-}
-
-
-#map_canvas {
-	width:100%;
-	position: absolute;
-	height:100%;
-	z-index: 1;
-	box-shadow: 4px 4px 4px #CCCCCC;
-}
-
-.map-sidebar {
-	position: absolute;
-	width:25%;
-	height: 90%;
-	top:2.5%;
-	left:0;
-	z-index: 2;
-	overflow-x:hidden;
-	display:none;
-}
-
-.shortlisting-container {
-	background-color: #FCFFEC;
-	height: 100%;
-	width:100%;
-
-	box-shadow: -1px -1px 2px #AAAAAA inset;
-	border-radius: 0 12px 12px 0;
-	/*padding:2.5%;*/
-	position:absolute;
-	left:-102%;
-	overflow-y:auto;
 	
+	margin: 0 0 0 2%;
+	/*margin: 20px 2% 0 4%;*/
 }
 
-#listing_tab div {
-	padding:20px 0;
-	float:left;
-	width: 100%;
-	margin: 0;
-	height:50px;
-	/*border-top:1px solid #CCCCCC;*/
-	border-bottom:1px solid #CCCCCC;
-	overflow-y:hidden; 
-}
-
-#listing_tab div:hover {
-	background-color: rgb(253, 255, 199);
-}
-
-#detail_tab span {
-	float:left;
-	width:75%;
-	margin: 15px 12.5%;
-	text-align: center;
-	font-style: italic;
-	border-bottom: 1px solid #CCCCCC;
-	padding:10px 0 5px 0;
-}
-
-#detail_tab p {
-	font-size: 15px;
-	float:left;
-	margin: 10px 5%;
-	width:90%;
-	padding-bottom: 0;
-}
-
-#detail_tab img {
-	width:90%;
-	margin: 10px 5%;
-	float: left
-}
-
-.map-sidebar-button {
-	width:25px;
-	height:25%;
-	top:16%;
-	background-color: #DDDDDD;
-	/*float:right;*/
-	/*margin-right: -50px;*/
-	/*left:25%;*/
-	/*margin-left: 50px;*/
-	left:0px;
-	position: absolute;
-	z-index: 2;
-	border-radius: 0 16px 16px 0;
-	box-shadow: 1px 1px 2px #CCCCCC;
-	border-top: 1px solid #AAAAAA;
-	border-right: 1px solid #AAAAAA;
-	border-bottom: 1px solid #AAAAAA;
-}
-.map-sidebar-button div {
-	top:15%;
-	position: absolute;
-	width: 100%;
-}
-
-.map-sidebar-button span {
-	width:8px;
-	height: 8px;
-	margin:5px 9px;
-	border-radius: 100%;
-	background-color: #C0C0C0;
-	float:right;
-}
-
-.detail-tab {
-	border-radius: 0 12px 0 0;
-}
-
-.tabs {
-	float:left;
-	width: 100%;
-	box-shadow: -1px 0px 2px #AAAAAA inset;
-	border-radius: 0 12px 0 0;
-}
-
-.tabs span {
-	width:50%;
-	text-align: center;
+.featured-listings {
+	width: 96%;
 	float: left;
-	padding:15px 0;
-	font-size: 15px;
-	color:white;
-	font-weight: bold;
-	background-color: #DDDDDD;
-
+	background-color: rgba(137, 29, 42, .78);
 }
 
-.active-tab {
-	background-color: #5F5F5F !important;
+.arrow {
+	width:2%;
+	height:50px;
+	background-color: #AAAAAA;
+	float: left;
+}
+
+.featured-container h3 {
+	margin:0;
+	width: 100%;
+	float: left;
+	padding:20px 0;
+	text-align: center;
+}
+
+.featured-item {
+	width: 33%;
+	float:left;
+}
+
+.featured-container img {
+	width:85%;
+	margin: 10px 7.5%;
+	float: left;
+	box-shadow: 1px 1px 2px #CCCCCC;
 }

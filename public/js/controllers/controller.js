@@ -1,4 +1,12 @@
-redSide.controller("HomeController", function ($scope, $location) {
+redSide.controller("HomeController", function ($scope, $location, $http) {
+	
+	$http.get('/featured').success(function(data, status) {
+		console.dir(data);
+		$scope.listings = data;
+		// $scope.$apply();
+	});
+
+
 	$scope.submitForm =  function () {
 		
 		var neighborhood = $('#search_form select[name="neighborhood"]').val(),
