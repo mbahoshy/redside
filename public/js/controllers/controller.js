@@ -82,10 +82,11 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			var tab = $('.map-sidebar-button');
 			var left = mapsidebar.css('width');
 			if (toggleCounter === 0) {
-				mapsidebar.css({display:'visible'});
+				mapsidebar.css({display:'inline'});
 				tab.animate({left:left}, 250);
 				sl.animate({left:'0'}, 250);
-				toggleCounter = 1;		
+				toggleCounter = 1;
+				console.log('vag');		
 			}
 			else if (mapPoint != true) {
 				toggleCounter = 0;

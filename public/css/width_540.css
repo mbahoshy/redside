@@ -11,14 +11,14 @@
 	}
 
 	.slideshow {
-		margin-bottom: 200px;
+		margin-bottom: 240px;
 	}
 
 	.search-form-holder {
 		top:324px;
 		left:0;
 		width:96%;
-		height:160px;
+		height:200px;
 		background-color: rgba(137, 29, 42, .9);
 		padding:20px 2%;
 		border-radius: 0;
@@ -28,8 +28,11 @@
 	.search-form-holder select, .submit-button {
 		width:75%;
 		margin:5px 12.5%;
-		padding:10px;
+	}
 
+	.submit-button {
+		padding: 10px 0;
+		text-align: center;
 	}
 
 	.search-form-holder h3 {

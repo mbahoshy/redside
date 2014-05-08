@@ -113,6 +113,7 @@
 	margin-right:1%;
 }
 
+
 /*.submit-button {
 	height:30px;
 	border-radius: 8%;
@@ -139,7 +140,7 @@
 .map-sidebar {
 	position: absolute;
 	width:25%;
-	height: 95%;
+	height: 90%;
 	top:2.5%;
 	left:0;
 	z-index: 2;
@@ -149,7 +150,7 @@
 
 .shortlisting-container {
 	background-color: #FCFFEC;
-	height: 95%;
+	height: 100%;
 	width:100%;
 
 	box-shadow: -1px -1px 2px #AAAAAA inset;
