@@ -58,7 +58,7 @@
 	<div ng-click="arrowClick('left')" class='arrow'></div>
 	<div class='featured-listings'>
 		<h3>Featured Seattle Properties</h3>
-		<div ng-repeat='listing in listings' class='featured-item'>
+		<div ng-repeat='listing in listings'  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class='featured-item'>
 			{{listing.title}} - {{listing.neighborhood}}
 			<img ng-src='/imgs/properties/{{listing.titleImg}}' />
 		</div>

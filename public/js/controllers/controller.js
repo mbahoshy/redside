@@ -8,6 +8,7 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 		queueData(data);
 		$scope.listings = dataShow;
 
+		// $scope.listings.
 		// $scope.$apply();
 	});
 
@@ -32,17 +33,17 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 	$scope.arrowClick = function (point) {
 		console.log(point);
 		if (point == 'left') {
-			var x = dataShow.shift();
+			var x = $scope.listings.shift();
 			dataQueue.unshift(x);
 
 			var y = dataQueue.pop();
-			dataShow.push(y);
+			$scope.listings.push(y);
 		} else {
-			var x = dataShow.pop();
+			var x = $scope.listings.pop();
 			dataQueue.push(x);
 
 			var y = dataQueue.shift();
-			dataShow.unshift(y);
+			$scope.listings.unshift(y);
 		}
 
 	}
