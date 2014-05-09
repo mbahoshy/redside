@@ -15,7 +15,8 @@
 			</div>
 
 			<div id='detail_tab'>
-				<span>{{listing.title}}</span>
+				<h3>{{listing.title}}</h3>
+
 				<p>
 					{{listing.address.street}}<br />
 					{{listing.neighborhood}}<br />
@@ -25,6 +26,8 @@
 				<p><label>Bathrooms:</label> {{listing.bath}}</p>
 				<p>${{listing.price}}</p>
 				<img ng-src='/imgs/properties/{{listing.titleImg}}' />
+				<a ng-href='#/seattle-residential/{{listing._id}}'>View Rental</a>
+
 			</div>
 
 		</div>

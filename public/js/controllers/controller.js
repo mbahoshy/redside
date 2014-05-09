@@ -173,3 +173,13 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 		}
 
 });
+
+redSide.controller("residentialController", function ($scope, $routeParams, $http) {
+
+	var id = $routeParams.id;
+	$http.get('residential/' + id).success(function(data, status) {
+		$scope.listing = data;
+	});
+
+
+});

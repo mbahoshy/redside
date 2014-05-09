@@ -22,5 +22,14 @@ function returnFeatured (req, res) {
 
 }
 
+function returnResidential (req, res) {
+	var id = req.param("id");
+
+	listing.findById(id, '', function(err, data) {
+		res.json(data);
+	})
+}
+
 exports.returnMapListings = returnMapListings;
 exports.returnFeatured = returnFeatured;
+exports.returnResidential = returnResidential;

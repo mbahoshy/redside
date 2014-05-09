@@ -12,5 +12,6 @@ module.exports = function (app) {
 
 	app.get("/mapListings/:neighborhood/:size/:price", mod.returnMapListings);
 	app.get("/featured", mod.returnFeatured);
+	app.get("/residential/:id", mod.returnResidential);
 }
 

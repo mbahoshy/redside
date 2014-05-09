@@ -7,4 +7,8 @@ redSide.config(['$routeProvider', function ($routeProvider){
 		templateUrl: '../views/map-view.html',
 		controller: 'mapController'
 	});
+	$routeProvider.when('/seattle-residential/:id', {
+		templateUrl: '../views/residential-view.html',
+		controller: 'residentialController'
+	});
 }]);

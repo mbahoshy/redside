@@ -54,7 +54,7 @@
 	background-color: rgb(253, 255, 199);
 }
 
-#detail_tab span {
+#detail_tab h3 {
 	float:left;
 	width:75%;
 	margin: 15px 12.5%;
@@ -62,6 +62,9 @@
 	font-style: italic;
 	border-bottom: 1px solid #CCCCCC;
 	padding:10px 0 5px 0;
+	font-weight: normal;
+	font-size: 16px;
+
 }
 
 #detail_tab p {
@@ -76,6 +79,18 @@
 	width:90%;
 	margin: 10px 5%;
 	float: left
+}
+
+#detail_tab a {
+	text-align: right;
+	text-decoration: none;
+	float: left;
+	width: 90%;
+	padding:5px 5%;
+	margin:0;
+	font-size: 14px;
+	color:blue;
+	font-style: italic;
 }
 
 .map-sidebar-button {
