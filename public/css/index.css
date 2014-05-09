@@ -117,20 +117,20 @@
 	width:98%;
 	float:left;
 	
-	margin: 0 0 0 2%;
+	margin: 40px 0 40px 2%;
 	/*margin: 20px 2% 0 4%;*/
 }
 
 .featured-listings {
-	width: 96%;
+	width: 92%;
 	float: left;
-	background-color: rgba(137, 29, 42, .78);
+	background-color: rgba(137, 29, 42, .9);
 }
 
 .arrow {
-	width:2%;
-	height:50px;
-	background-color: #AAAAAA;
+	width:4%;
+	height:310px;
+	background-color: #747474;
 	float: left;
 }
 
@@ -153,3 +153,4 @@
 	float: left;
 	box-shadow: 1px 1px 2px #CCCCCC;
 }
+

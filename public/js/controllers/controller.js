@@ -1,8 +1,12 @@
 redSide.controller("HomeController", function ($scope, $location, $http) {
 
+	var dataQueue = [];
+	var dataShow = [];
+
 	$http.get('/featured').success(function(data, status) {
 		console.dir(data);
-		$scope.listings = data;
+		queueData(data);
+		$scope.listings = dataShow;
 
 		// $scope.$apply();
 	});
@@ -15,6 +19,32 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 			price = $('#search_form select[name="price"]').val();
 		
 		$location.url('/seattle-properties/' + neighborhood + '/' + size + '/' + price);
+
+	}
+
+	function queueData (data) {
+		dataQueue = data;
+		dataShow = dataQueue.splice(0,3);
+		console.dir(dataShow);
+		console.dir(dataQueue);
+
+	}
+
+	$scope.arrowClick = function (point) {
+		console.log(point);
+		if (point == 'left') {
+			var x = dataShow.shift();
+			dataQueue.unshift(x);
+
+			var y = dataQueue.pop();
+			dataShow.push(y);
+		} else {
+			var x = dataShow.pop();
+			dataQueue.push(x);
+
+			var y = dataQueue.shift();
+			dataShow.unshift(y);
+		}
 
 	}
 
