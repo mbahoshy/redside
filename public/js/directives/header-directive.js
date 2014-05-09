@@ -6,4 +6,12 @@ redSide.directive('header', function () {
 		templateUrl: '/views/header.html'
 	};
 });
-console.log('header');
+
+redSide.directive('footer', function () {
+	return {
+		restrict:'A',
+		replace: true,
+		// templateUrl: 'div>'
+		templateUrl: '/views/footer.html'
+	};
+});

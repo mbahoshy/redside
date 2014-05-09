@@ -43,3 +43,11 @@ body {
 .fleft {
 	float: left;
 }
+
+
+#footer  {
+	float:left;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	margin:80px 0;
+}

@@ -11,7 +11,6 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 		// $scope.$apply();
 	});
 
-
 	$scope.submitForm =  function () {
 		
 		var neighborhood = $('#search_form select[name="neighborhood"]').val(),
