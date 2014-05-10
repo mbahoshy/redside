@@ -1,3 +1,4 @@
+<div class='page-wrapper'>
 <div class='slideshow-container'>
 	<div class='slideshow'>
 		<div class='search-form-holder'>
@@ -32,20 +33,18 @@
 	</div>
 </div>
 <div class='content-container'>
+	<h3>The Redside approach to Property Management ...</h3>
 	<p>
 		Welcome to Seattle's premiere Property Management company. Redside Partners Property Mananagement specializes in residential and commercial property management, serving the greater Seattle community including Bellevue, Redmond, and Shoreline.
 	</p>
 	<p>
 		Use the search above to quickly find properties for rent in Seattle's most desireable neighborhoods. We have the perfect apartments or spaces for students, professionals, families, and businesses.
 	</p>
-	<p>
-		Choosing Redside Partners Property Management means that you are joining a team committed to exceeding owner objectives, and tenant expectations. Redside's Seattle Property Management team adds value to property investments throguh careful analysis, attention to detail, and responsive property service.
-	</p>
+
 </div>
 <div class='link-container'>
 	<span>Quick Links</span>
 	<ul>
-		<a><li>Now Availale</li></a>
 		<a><li>Residential For Rent</li></a>
 		<a><li>Application to rent</li></a>
 		<a><li>Maintenance Request</li></a>
@@ -54,18 +53,28 @@
 	<ul>
 </div>
 
-<div class='featured-container'>
-	<div ng-click="arrowClick('left')" class='arrow'></div>
-	<div class='featured-listings'>
-		<h3>Featured Seattle Properties</h3>
-		<div ng-repeat='listing in listings'  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class='featured-item'>
-			{{listing.title}} - {{listing.neighborhood}}
-			<img ng-src='/imgs/properties/{{listing.titleImg}}' />
-		</div>
-	</div>
-	<div ng-click="arrowClick('right')" class='arrow'></div>
+
 </div>
 
+<div class='featured-wrapper'>
+	<!-- <div class='page-wrapper'> -->
+		<div class='featured-container page-wrapper'>
+			<div ng-click="arrowClick('left')" class='arrow'><img src='/imgs/left.png' /></div>
+			<div class='featured-listings'>
+				<h3>Featured Seattle Properties</h3>
+				<div ng-repeat='listing in listings'  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class='featured-item'>
+					<h4>{{listing.title}}</h4>
+					<span>{{listing.neighborhood}}</span>
+					<img ng-src='/imgs/properties/{{listing.titleImg}}' />
+				</div>
+			</div>
+			<div ng-click="arrowClick('right')" class='arrow'><img src='/imgs/right.png' /></div>
+		</div>
+	<!-- </div> -->
+</div>
+<div class='page-wrapper'>
+
+</div>
 <!-- <div class='link-container'>
 	<div class='link-box services'>
 		<div class='col-head'><p>For Rent</p></div>
@@ -99,5 +108,11 @@
 	</div>
 
 </div>
+
+
+
+	<p>
+		<em>Looking for a company to manage your rental property?</em> The Redside rental management team will exceed your expectations. We believe that by understanding the property owner's objectives, and aligning our goals with theirs, <i>we will get and keep good tenants at market rents.</i>
+	</p>
  -->
 
