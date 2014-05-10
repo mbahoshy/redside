@@ -105,9 +105,9 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 
 						}
 					}
+					map.panTo(this.position);
 					$scope.toggleShortlistingContainer (true);
 					$scope.toggleTabs(1);
-					map.panTo(this.position);
 					this.setIcon('https://www.google.com/mapfiles/marker_green.png');
 				});
 
