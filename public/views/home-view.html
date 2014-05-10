@@ -62,10 +62,12 @@
 		<div ng-click="arrowClick('left')" class='arrow'><img src='/imgs/left.png' /></div>
 		<div class='featured-listings'>
 			<h3>Featured Seattle Properties</h3>
-			<div ng-repeat='listing in listings'  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class='featured-item'>
-				<h4>{{listing.title}}</h4>
-				<span>{{listing.neighborhood}}</span>
-				<img ng-src='/imgs/properties/{{listing.titleImg}}' />
+			<div ng-repeat='listing in listings' >
+				<a class='featured-item' ng-href='#/seattle-residential/{{listing._id}}'>
+					<h4>{{listing.title}}</h4>
+					<span>{{listing.neighborhood}}</span>
+					<img ng-src='/imgs/properties/{{listing.titleImg}}' />
+				</a>
 			</div>
 		</div>
 		<div ng-click="arrowClick('right')" class='arrow'><img src='/imgs/right.png' /></div>
@@ -74,6 +76,9 @@
 </div>
 <div class='page-wrapper'>
 
+</div>
+
+<div footer>
 </div>
 <!-- <div class='link-container'>
 	<div class='link-box services'>

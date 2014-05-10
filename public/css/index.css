@@ -193,6 +193,10 @@
 	padding-bottom: 30px;
 }
 
+.featured-item:hover {
+	background-color: rgba(126, 193, 255, 0.3);
+}
+
 .featured-item h4, .featured-item span, .featured-item img {
 	width:85%;
 	margin: 5px 7.5%;

@@ -58,4 +58,10 @@
 		width:100%;
 	}
 
+	.residential-imgs img {
+		width:46%;
+		height:auto;
+		float:left;
+	}
+
 }

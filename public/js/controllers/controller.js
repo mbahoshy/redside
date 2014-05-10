@@ -179,6 +179,8 @@ redSide.controller("residentialController", function ($scope, $routeParams, $htt
 	var id = $routeParams.id;
 	$http.get('residential/' + id).success(function(data, status) {
 		$scope.listing = data;
+		$scope.imgs = data.imgs;
+		console.dir($scope.imgs);
 	});
 
 
