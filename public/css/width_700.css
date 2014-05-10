@@ -1,9 +1,15 @@
 @media screen and (max-width: 700px) {
 
-	.content-container p {
+	.content-container {
+		width:100%;
+		margin:0 0 0 0;
+	}
+
+	.content-container p, .content-container h3 {
 		width:92%;
 		margin-right:4%;
 		margin-left:4%;
+		margin-top:15px;
 		text-align: left;
 	}
 
@@ -20,8 +26,16 @@
 		width:92%;
 		margin-right: 4%;
 		margin-left: 4%;
-		border-radius: 8px;
+		/*border-radius: 8px;*/
 	}
 
+	.featured-item {
+		width: 100%;
+	}
+
+	#footer li {
+		width:50%;
+		margin:15px 0;
+	}
 
 }

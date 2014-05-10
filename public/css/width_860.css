@@ -22,7 +22,11 @@
 	.search-form-holder select {
 		width:24%;
 	}
-	.content-container {
+
+	.featured-item {
+		width: 50%;
+	}
+/*	.content-container {
 		width:100%;
 		margin: 30px 0 0 0;
 	}
@@ -37,9 +41,9 @@
 
 	.content-container p:first-child {
 		margin: 20px 2%;
-	}
+	}*/
 
-	.link-container {
+/*	.link-container {
 		width:66%;
 		margin: 30px 17%;
 	}
@@ -49,5 +53,5 @@
 		margin-left: 6%;
 		margin-right: 2%;
 	}
-
+*/
 }

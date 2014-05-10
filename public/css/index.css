@@ -173,6 +173,10 @@
 
 }
 
+.featured-container {
+	overflow-y:hidden;
+}
+
 
 .featured-container h3 {
 	margin:0;
@@ -186,6 +190,7 @@
 .featured-item {
 	width: 33%;
 	float:left;
+	padding-bottom: 30px;
 }
 
 .featured-item h4, .featured-item span, .featured-item img {

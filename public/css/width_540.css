@@ -40,10 +40,6 @@
 	}
 
 	.content-container p {
-		display: none;
-	}
-
-	.content-container p:first-child {
 		text-align: justify;
 		display: block;
 	}
@@ -52,15 +48,14 @@
 		width:100%;
 		margin-right: 0;
 		margin-left: 0;
-		border:none;
-		box-shadow: none;
-		background-color: #EEEEEE;
-		border-radius: 0;
 	}
 
 	.map-sidebar {
 		width:85%;
 	}
 
+	#footer li {
+		width:100%;
+	}
 
 }
