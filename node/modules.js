@@ -4,8 +4,20 @@ function returnMapListings (req, res) {
 	var neighborhood = req.param("neighborhood"),
 		size = req.param("size"),
 		price = req.param("price");
+		searchterms = {};
 
-	listing.find({}, '', function(err, data) {
+	if (neighborhood != "all") {
+		searchterms.neighborhood = neighborhood;
+	}
+
+	// if (size != "all") {
+	// 	searchterms.size = size;
+	// }
+	// if (price != "all") {
+	// 	searchterms.price = price;
+	// }
+
+	listing.find(searchterms, '', function(err, data) {
 		console.log(data);
 		res.json(data);
 

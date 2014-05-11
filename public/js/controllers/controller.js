@@ -72,7 +72,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			$scope.listings = listings;
 			// $scope.data = data;
 		    var mapOptions = {
-	          center: new google.maps.LatLng(47.6323268, -122.3568641),
+	          center: new google.maps.LatLng(nGPS[neighborhood].lat, nGPS[neighborhood].lng),
 	          zoom: 14,
 	          zoomControl: true,
 			  zoomControlOptions: {
@@ -98,7 +98,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 				markersArray.push(marker);
 				google.maps.event.addListener(marker, 'click', 	function () {
 					for (var y = 0; y < listings.length; y ++) {
-						markersArray[y].setIcon('https://www.google.com/mapfiles/marker.png')
+						markersArray[y].setIcon('https://www.google.com/mapfiles/marker.png');
 						if(listings[y]._id == this.id) {
 							$scope.listing = listings[y];
 							$scope.$apply();
@@ -144,15 +144,24 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			if (toggle == 0) {
 				$('#listing_tab').css({display:'visible'});
 				$('#detail_tab').css({display:'none'});
+				$('#search_tab').css({display:'none'});
 
+				$('.active-tab').removeClass('active-tab');
 				$('.listing-tab').addClass('active-tab');
-				$('.detail-tab').removeClass('active-tab');
-			} else {
+			} else if (toggle ==1) {
 				$('#listing_tab').css({display:'none'});
 				$('#detail_tab').css({display:'visible'});		
+				$('#search_tab').css({display:'none'});
 
-				$('.listing-tab').removeClass('active-tab');
+				$('.active-tab').removeClass('active-tab');
 				$('.detail-tab').addClass('active-tab');		
+			} else {
+				$('#listing_tab').css({display:'none'});
+				$('#detail_tab').css({display:'none'});		
+				$('#search_tab').css({display:'visible'});
+
+				$('.active-tab').removeClass('active-tab');
+				$('.search-tab').addClass('active-tab');	
 			}
 		}
 
@@ -160,11 +169,21 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 			var listingid = $(e.target).data('listingid');
 			var latlng;
 
-			for (var y = 0; y < listings.length; y ++) {
-				if(listings[y]._id == listingid) {
-					latlng = new google.maps.LatLng(listings[y].coord.lat, listings[y].coord.log);
-					$scope.listing = listings[y];
+			for (var y = 0; y < markersArray.length; y ++) {
+				if(markersArray[y].id == listingid) {
+					console.dir(markersArray[y]);
+					latlng = markersArray[y].position;
+					// $scope.listing = markersArray[y];
+					markersArray[y].setIcon('https://www.google.com/mapfiles/marker_green.png');
+					for (var i=0; i<listings.length; i++) {
+						if (markersArray[y].id == listings[i]._id){
+							$scope.listing = listings[i];
+							break;
 
+						}
+					}
+				} else {
+					markersArray[y].setIcon('https://www.google.com/mapfiles/marker.png');
 				}
 			}
 
@@ -185,3 +204,63 @@ redSide.controller("residentialController", function ($scope, $routeParams, $htt
 
 
 });
+
+
+var nGPS = {
+	"Ballard": {
+		lat:47.677,
+		lng:-122.38499999999999
+	},
+	"Capitol Hill": {
+		lat:47.625305,
+		lng:-122.3221835
+	},	
+	"Cascase Neighborhood": {
+		lat:47.6219695,
+		lng:-122.3317151
+	},
+	"Central District": {
+		lat:47.6087583,
+		lng:-122.2964235
+	},	
+	"Columbia City": {
+		lat:47.55986559999999,
+		lng:-122.28649910000001
+	},	
+	"Eastlake": {
+		lat:47.6417654,
+		lng:-122.32648719999997
+	},	
+	"Fremont": {
+		lat:47.6505,
+		lng:-122.34989999999999
+	},	
+	"Leschi": {
+		lat:47.6003094,
+		lng:-122.2928109
+	},
+	"Magnolia": {
+		lat:47.63963020000001,
+		lng:-122.39966019999997
+	},
+	"North Seattle": {
+		lat:47.7170204,
+		lng:-122.30093369999997
+	},
+	"Queen Anne": {
+		lat:47.6323268,
+		lng:-122.3568641
+	},
+	"South Lake Union": {
+		lat:47.6255703,
+		lng:-122.33438769999998
+	},
+	"University District": {
+		lat:47.6627771,
+		lng:-122.31387669999998
+	},
+	"West Seattle": {
+		lat:47.5666038,
+		lng:-122.38673829999999
+	}
+}

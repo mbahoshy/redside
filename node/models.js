@@ -18,7 +18,7 @@ var listingSchema = new mongoose.Schema({
 	titleImg: String,
 	neighborhood: String,
 	price: Number,
-	size: String,
+	size: Array,
 	imgs: [],
 	coord: {
 		lat: Number,

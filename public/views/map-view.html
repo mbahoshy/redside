@@ -1,10 +1,12 @@
-<div class='map-container'>
+<!-- <div class='page-wrapper'> -->
+<div class='map-container page-wrapper'>
 	<div id="map_canvas"></div>
 	<div class='map-sidebar'>	
 		<div class='shortlisting-container'>
 			<div class='tabs'>
 				<span ng-click = "toggleTabs(0)" class='listing-tab active-tab'>Listings</span>
 				<span ng-click = "toggleTabs(1)" class='detail-tab'>Details</span>
+				<span ng-click = "toggleTabs(2)" class='search-tab'>Search</span>
 			</div>
 
 			<div id='listing_tab'>
@@ -29,6 +31,9 @@
 				<a ng-href='#/seattle-residential/{{listing._id}}'>View Rental</a>
 
 			</div>
+			<div id='search_tab'>
+				<p>test</p>
+			</div>
 
 		</div>
 	</div>
@@ -40,3 +45,4 @@
 		</div>
 	</div>
 </div>
+<!-- </div> -->

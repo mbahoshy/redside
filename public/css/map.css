@@ -16,7 +16,7 @@
 
 .map-sidebar {
 	position: absolute;
-	width:25%;
+	width:33%;
 	height: 90%;
 	top:2.5%;
 	left:0;
@@ -31,7 +31,7 @@
 	width:100%;
 
 	box-shadow: -1px -1px 2px #AAAAAA inset;
-	border-radius: 0 12px 12px 0;
+	border-radius: 0 0 12px 0;
 	/*padding:2.5%;*/
 	position:absolute;
 	left:-102%;
@@ -93,6 +93,11 @@
 	font-style: italic;
 }
 
+.detail-tab {
+	/*border-radius: 0 12px 0 0;*/
+}
+
+
 .map-sidebar-button {
 	width:25px;
 	height:25%;
@@ -126,27 +131,29 @@
 	float:right;
 }
 
-.detail-tab {
-	border-radius: 0 12px 0 0;
-}
 
 .tabs {
 	float:left;
 	width: 100%;
-	box-shadow: -1px 0px 2px #AAAAAA inset;
-	border-radius: 0 12px 0 0;
+	/*box-shadow: -1px 0px 2px #AAAAAA inset;*/
+	/*border-radius: 0 12px 0 0;*/
+}
+
+.tabs span:last-child {
+	border-right: none;
+
 }
 
 .tabs span {
-	width:50%;
+	width:33%;
 	text-align: center;
 	float: left;
-	padding:15px 0;
+	padding:8px 0;
 	font-size: 15px;
 	color:white;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	background-color: #DDDDDD;
-
+	border-right:1px solid #CCCCCC;
 }
 
 .active-tab {
