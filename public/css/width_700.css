@@ -29,6 +29,14 @@
 		/*border-radius: 8px;*/
 	}
 
+	.arrow {
+		width:6%;
+	}
+
+	.featured-listings {
+		width: 84%;
+	}
+	
 	.featured-item {
 		width: 100%;
 	}

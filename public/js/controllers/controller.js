@@ -93,7 +93,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 				var	marker = new google.maps.Marker({
 					id: listings[i]._id,
 				    position: myLatlng,
-				    title:"Hello World!"
+				    title: listings[i].title
 				});
 				markersArray.push(marker);
 				google.maps.event.addListener(marker, 'click', 	function () {

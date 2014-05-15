@@ -50,6 +50,14 @@
 		margin-left: 0;
 	}
 
+	.arrow {
+		width:8%;
+	}
+
+	.featured-listings {
+		width: 80%;
+	}
+
 	.map-sidebar {
 		width:85%;
 	}

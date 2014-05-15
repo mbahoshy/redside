@@ -59,7 +59,6 @@
 	color: #AAAAAA;
 }
 
-
 .content-container em {
 	font-weight: bold;
 }
@@ -74,7 +73,6 @@
 	text-align: center;
 	width:46%;
 }
-
 
 .link-container {
 	width: 26%;
@@ -129,6 +127,11 @@
 	margin-right:1%;
 }
 
+.fb-container {
+	width:100%;
+	float: left;
+	margin:20px 4%;
+}
 
 .arrow:first-child {
 	float: left;
@@ -217,4 +220,60 @@
 .featured-item img {
 	height:220px;
 	box-shadow: 1px 1px 2px #CCCCCC;
+}
+
+
+.owner-box h4 {
+	float:left;
+	font-size: 24px;
+	color: #AAAAAA;
+	font-style: italic;
+	margin:20px 0 10px 0;
+}
+
+.owner-box p {
+	margin:15px 4%;
+	text-align: left;
+	width:92%;
+}
+
+.owner-info {
+	width: 26%;
+	float:right;
+	margin:20px 2% 0 0;
+	padding: 10px 0;
+	border: 1px solid rgba(0, 102, 231, 0.42);
+}
+
+.owner-info h4 {
+	text-align: center;
+	width: 100%;
+	float: left;
+	color:red;
+	padding:20px 0 10px 0;
+	margin:0;
+}
+
+.owner-info p {
+	margin:10px 2%;
+	width: 98%;
+	float: left;
+	text-align: center;
+	line-height: 2em;
+}
+
+
+
+.owner-info span {
+	padding:8px 0;
+	text-align: center;
+	background-color: rgba(0, 102, 231, .5);
+	margin: 20px 25%;
+	float:left;
+	width:50%;
+	color:white;
+}
+
+.owner-info span:hover {
+	background-color: rgba(0, 102, 231, 1);
 }
