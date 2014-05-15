@@ -11,4 +11,8 @@ redSide.config(['$routeProvider', function ($routeProvider){
 		templateUrl: '../views/residential-view.html',
 		controller: 'residentialController'
 	});
+	$routeProvider.when('/property-owner-page', {
+		templateUrl: '../views/property-owner-page-view.html',
+		controller: 'propertyOwnerPageController'
+	});
 }]);

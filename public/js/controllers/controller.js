@@ -205,6 +205,12 @@ redSide.controller("residentialController", function ($scope, $routeParams, $htt
 
 });
 
+redSide.controller("propertyOwnerPageController", function ($scope) {
+
+
+});
+
+
 
 var nGPS = {
 	"Ballard": {
