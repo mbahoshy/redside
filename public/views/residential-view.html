@@ -4,7 +4,7 @@
 	<p>{{listing.address.street}}, {{listing.address.city}}, {{listing.address.zip}}</p>
 	<p>{{listing.neighborhood}}</p>
 	<p>{{listing.description}}</p>
-	<p>{{listing.abstract}}</p>
+	<p ng-bind-html='renderHtml(listing.abstract)'></p>
 
 	<div class='residential-imgs'>
 		<img ng-repeat='img in imgs' src='/imgs/properties/{{img}}' />

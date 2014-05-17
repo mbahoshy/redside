@@ -193,15 +193,18 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 
 });
 
-redSide.controller("residentialController", function ($scope, $routeParams, $http) {
+redSide.controller("residentialController", function ($scope, $routeParams, $http, $sce) {
 
 	var id = $routeParams.id;
 	$http.get('residential/' + id).success(function(data, status) {
 		$scope.listing = data;
 		$scope.imgs = data.imgs;
-		console.dir($scope.imgs);
 	});
 
+	$scope.renderHtml = function(html_code)
+	{
+	    return $sce.trustAsHtml(html_code);
+	};
 
 });
 
