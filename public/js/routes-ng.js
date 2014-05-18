@@ -16,7 +16,7 @@ redSide.config(['$routeProvider', function ($routeProvider, $locationProvider){
 		controller: 'propertyOwnerPageController'
 	});
 	
-	$locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('!');
+	// $locationProvider.html5Mode(true);
+    // $locationProvider.hashPrefix('!');
 
 }]);
