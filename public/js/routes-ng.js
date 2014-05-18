@@ -1,4 +1,4 @@
-redSide.config(['$routeProvider', function ($routeProvider){
+redSide.config(['$routeProvider', function ($routeProvider, $locationProvider){
 	$routeProvider.when('/', {
 		templateUrl: '../views/home-view.html',
 		controller: 'HomeController'
@@ -15,4 +15,8 @@ redSide.config(['$routeProvider', function ($routeProvider){
 		templateUrl: '../views/property-owner-page-view.html',
 		controller: 'propertyOwnerPageController'
 	});
+	
+	$locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
+
 }]);

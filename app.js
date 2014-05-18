@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(passport.session()); //create passport session
 
 app.configure(function(){
+  app.use(require('prerender-node').set('prerenderToken', '9yXrqAfqWsGHepGnpUe7'));
   app.use(express.bodyParser());
 });
 
