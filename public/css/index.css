@@ -50,7 +50,7 @@
 	/*width:69.36363636%;*/
 	width:66%;
 	float:left;
-	margin:0 0 0 4%;
+	margin:30px 0 0 4%;
 }
 
 .content-container h3 {
@@ -78,7 +78,7 @@
 	width: 26%;
 	/*width: 22.63636364%;*/
 	float:right;
-	margin:20px 2% 0 0;
+	margin:40px 2% 0 0;
 
 	padding: 10px 0;
 }
@@ -140,7 +140,7 @@
 
 .arrow {
 	width:4%;
-	height:360px;
+	height:400px;
 	padding:0 1%;
 	/*background-color: #E4E4E4;*/
 	float: right;
@@ -172,7 +172,7 @@
 	float: left;
 	/*background-color: rgba(252, 255, 215, 0.9);*/
 	/*background-color: #FCFFEC;*/
-	height:360px;
+	height:400px;
 
 }
 
@@ -193,7 +193,7 @@
 .featured-item {
 	width: 33%;
 	float:left;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
 .featured-item:hover {
