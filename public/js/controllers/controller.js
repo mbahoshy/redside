@@ -48,6 +48,12 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 
 	}
 
+	
+	$scope.$on('$routeChangeSuccess', function () {
+		FB.XFBML.parse();
+	});
+		
+
 
 });
 
@@ -214,6 +220,11 @@ redSide.controller("propertyOwnerPageController", function ($scope) {
 		$(e.target).siblings('.po-page-content').slideToggle();
 		$(e.target).toggleClass('po-active');
 	}
+
+	angular.element(document).ready(function() {
+		FB.XFBML.parse();
+
+	});
 
 });
 

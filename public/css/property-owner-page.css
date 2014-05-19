@@ -1,4 +1,13 @@
-.property-owner-page {
+.property-owner-page h1 {
+	width: 96%;
+	float: left;
+	margin-top: 40px;
+	color: #FFFFFF;
+	padding: 15px 2%;
+	font-weight: normal;
+	background-color: rgba(137, 29, 42, .78);
+	font-size: 23px;
+	border-radius: 0 20px 20px;
 	
 }
 
@@ -72,15 +81,17 @@
 
 .po-page {
 	float:left;
-	width:100%;
+	width:92%;
+	margin-left: 8%;
 	/*padding:20px 0;*/
 	/*margin:40px 0;*/
 }
 
 .po-page h3 {
 	float:left;
-	width: 76%;
-	padding:30px 12%;
+	width: 92%;
+	padding:20px 4%;
+
 	/*border-bottom: 1px solid #CCCCCC;*/
 	font-weight: normal;
 	margin:15px 0;
@@ -96,21 +107,28 @@
 	background-color: rgba(0, 102, 231, 1);
 }
 
-.po-page h4 {
+.po-page-content span {
 	float: left;
-	width:92%;
-	margin: 20px 8% 0 8%;
-}
-
-.po-page p {
-	float: left;
-	width: 84%;
-	margin-left: 12%;
+	width:100%;
+	margin-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
 }
 
 .po-page-content {
 	display: none;
+	float:left;
+	width:100%;
+	padding:15px 0 20px 0;
 }
+
+.po-page-content p {
+	float: left;
+	width: 42%;
+	margin: 0 4%;
+	line-height: 1.5em;
+}
+
 
 .po-active {
 	background-color: rgba(0, 102, 231, .2) !important;
