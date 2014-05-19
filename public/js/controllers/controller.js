@@ -210,6 +210,10 @@ redSide.controller("residentialController", function ($scope, $routeParams, $htt
 
 redSide.controller("propertyOwnerPageController", function ($scope) {
 
+	$scope.poPageClick = function(e) {
+		$(e.target).siblings('.po-page-content').slideToggle();
+		$(e.target).toggleClass('po-active');
+	}
 
 });
 
