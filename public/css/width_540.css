@@ -58,6 +58,11 @@
 		width: 80%;
 	}
 
+	.owner-info {
+		width: 80%;
+		margin-left: 10%;
+	}
+
 	.map-sidebar {
 		width:85%;
 	}

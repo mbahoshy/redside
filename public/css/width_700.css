@@ -41,6 +41,11 @@
 		width: 100%;
 	}
 
+	.owner-info {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+
 	#footer li {
 		width:50%;
 		margin:15px 0;

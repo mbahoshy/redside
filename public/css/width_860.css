@@ -27,6 +27,15 @@
 		width: 50%;
 	}
 
+	.owner-info {
+		width: 60%;
+		margin-left: 20%;
+	}
+	
+	.owner-box {
+		width:75%;
+	}
+
 	.map-sidebar {
 		width:50%;
 	}
