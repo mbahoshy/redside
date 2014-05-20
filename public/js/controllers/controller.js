@@ -20,7 +20,7 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 		
 		$location.url('/seattle-properties/' + neighborhood + '/' + size + '/' + price);
 
-	}
+	};
 
 	function queueData (data) {
 		dataQueue = data;
@@ -46,12 +46,12 @@ redSide.controller("HomeController", function ($scope, $location, $http) {
 			$scope.listings.unshift(y);
 		}
 
-	}
+	};
 
 	
-	$scope.$on('$routeChangeSuccess', function () {
-		FB.XFBML.parse();
-	});
+	// $scope.$on('$routeChangeSuccess', function () {
+	// 	FB.XFBML.parse();
+	// });
 		
 
 
@@ -144,7 +144,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 				});
 			} 
 
-		}
+		};
 
 		$scope.toggleTabs = function (toggle) {
 			if (toggle == 0) {
@@ -169,7 +169,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 				$('.active-tab').removeClass('active-tab');
 				$('.search-tab').addClass('active-tab');	
 			}
-		}
+		};
 
 		$scope.listingClick = function (e) {
 			var listingid = $(e.target).data('listingid');
@@ -195,7 +195,7 @@ redSide.controller("mapController", function ($scope, $routeParams, $http) {
 
 			map.panTo(latlng);
 			$scope.toggleTabs(1);
-		}
+		};
 
 });
 
@@ -219,12 +219,12 @@ redSide.controller("propertyOwnerPageController", function ($scope) {
 	$scope.poPageClick = function(e) {
 		$(e.target).siblings('.po-page-content').slideToggle();
 		$(e.target).toggleClass('po-active');
-	}
+	};
 
-	angular.element(document).ready(function() {
-		FB.XFBML.parse();
+	// angular.element(document).ready(function() {
+	// 	FB.XFBML.parse();
 
-	});
+	// });
 
 });
 
@@ -287,4 +287,4 @@ var nGPS = {
 		lat:47.5666038,
 		lng:-122.38673829999999
 	}
-}
+};

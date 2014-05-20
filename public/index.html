@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=0.">
-	<meta name="fragment" content="!">
+	<!-- <meta name="fragment" content="!"> -->
 	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js'></script>
-	<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-animate.js'></script>
-	
-	<script src='http://code.angularjs.org/1.2.16/angular-route.min.js'></script>
+	<script type="text/javascript" src='https://code.angularjs.org/1.2.16/angular-route.min.js'></script>
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel='stylesheet' href='css/main.css'>
 	<link rel='stylesheet' href='css/index.css'>
@@ -19,16 +18,37 @@
 	<link rel='stylesheet' href='css/width_700.css'>
 	<link rel='stylesheet' href='css/width_540.css'>
 
+
 	<script type="text/javascript" src='js/main.js'></script>
+
+
 	<script type="text/javascript" src='js/routes-ng.js'></script>
 	<script type="text/javascript" src='js/controllers/controller.js'></script>
 	<script type="text/javascript" src='js/directives/header-directive.js'></script>
+
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCKVS30OQvF9tBGXCapMX1-ZuSb2z4kLk&sensor=false">
     </script>
-<base href="/">
+
+	<base href="/">
+
+
 </head>
 <body>
+
+<div header>
+</div>
+<div autoscroll="true" ng-view id='page'>
+</div>
+</body>
+</html>
+
+<!-- 
+
+
+
+
+
 	<div id="fb-root"></div>
 
 	<script>(function(d, s, id) {
@@ -38,9 +58,5 @@
 	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-<div header>
-</div>
-<div autoscroll="true" ng-view id='page'>
-</div>
-</body>
-</html>
+
+	-->

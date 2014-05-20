@@ -1,1 +1,1 @@
-var redSide = angular.module('redSide', ['ngRoute', 'ngAnimate']);
+var redSide = angular.module('redSide', ['ngRoute',]);

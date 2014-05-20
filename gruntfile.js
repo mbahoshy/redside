@@ -45,16 +45,36 @@ module.exports = function(grunt) {
 			  }
 		    }
 
+		},
+		htmlSnapshot: {
+		  debug: {
+		    options: {
+		      snapshotPath: 'snapshots/',
+		      sitePath: 'http://127.0.0.1:3000/',
+		      msWaitForPages: 10000,
+		      urls: [
+		        '#/',
+		      ]
+		    }
+		  },
+		  prod: {
+		    options: {}
+		  }
+		},
+		jshint: {
+		    all: ['gruntfile.js', 'public/**/*.js']
 		}
 	});
 
 	// load npm tasks
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-express-server');
+	grunt.loadNpmTasks('grunt-html-snapshot');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	// register tasks
 	grunt.registerTask('default', ['express:dev', 'watch']);
 	grunt.registerTask('console', 'confirm task', function () {
-		console.log("File Changed ...")
+		console.log("File Changed ...");
 	});
 };

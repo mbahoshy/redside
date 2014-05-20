@@ -1,3 +1,4 @@
+// redSide.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider){
 redSide.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider){
 	$routeProvider.when('/', {
 		templateUrl: '../views/home-view.html',
@@ -17,6 +18,6 @@ redSide.config(['$routeProvider', '$locationProvider', function ($routeProvider,
 	});
 	
 	// $locationProvider.html5Mode(true);
- //    $locationProvider.hashPrefix('!');
+    // $locationProvider.hashPrefix('!');
 
 }]);
