@@ -18,6 +18,6 @@ redSide.config(['$routeProvider', '$locationProvider', function ($routeProvider,
 	});
 	
 	// $locationProvider.html5Mode(true);
-    // $locationProvider.hashPrefix('!');
+    $locationProvider.hashPrefix('!');
 
 }]);

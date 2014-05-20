@@ -50,10 +50,11 @@ module.exports = function(grunt) {
 		  debug: {
 		    options: {
 		      snapshotPath: 'snapshots/',
-		      sitePath: 'http://127.0.0.1:3000/',
-		      msWaitForPages: 10000,
+		      sitePath: 'http://127.0.0.1:3000/#',
+		      msWaitForPages: 1000,
 		      urls: [
-		        '#/',
+		        '/',
+		        '/property-owner-page'
 		      ]
 		    }
 		  },

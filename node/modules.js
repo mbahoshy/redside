@@ -18,7 +18,6 @@ function returnMapListings (req, res) {
 	// }
 
 	listing.find(searchterms, '', function(err, data) {
-		console.log(data);
 		res.json(data);
 
 	});
@@ -27,7 +26,6 @@ function returnMapListings (req, res) {
 
 function returnFeatured (req, res) {
 	listing.find({featured:true}, '', function(err, data) {
-		console.log(data);
 		res.json(data);
 
 	});
